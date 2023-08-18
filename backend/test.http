@@ -1,0 +1,13 @@
+get http://localhost:3000/api/todos 
+###
+post http://localhost:3000/api/todos HTTP/1.1
+content-type: application/json
+
+{
+    "todo":"Make frontend",
+    "status":"Pending",
+    "deadline":"August 04,2023 Friday",
+    "Note":"Important"
+}
+###
+get http://localhost:3000/api/todos 
