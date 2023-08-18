@@ -23,9 +23,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('../front-end'));
-app.use(cors({
-  origin: '*'
-}));
+// app.use(cors({
+//   origin: '*'
+// }));
 // Define the routes for CRUD operations
 app.get('/api/todos', async (req, res) => {
   try {
