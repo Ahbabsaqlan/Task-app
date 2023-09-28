@@ -2,7 +2,7 @@ let todoContainer = document.getElementById('todo')
 let statuss = document.getElementById('status')
 
 const getData =()=>{
-fetch('http://localhost:3000/api/todos/')
+fetch('http://localhost:3000/api/todos')
 .then(response => response.json()) //parsing js from json
 .then(data => { console.log(data)
   data.map(todo=>{
